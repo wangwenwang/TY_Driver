@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckPathViewController" customModule="newDriver" customModuleProvider="target">
+            <connections>
+                <outlet property="mapViwe" destination="gGC-Y8-3YF" id="ys6-Ia-pGI"/>
+                <outlet property="pathDistanceField" destination="XOz-3Q-ymO" id="BVS-1d-BfH"/>
+                <outlet property="progress" destination="zqX-8O-87O" id="Per-G5-jSE"/>
+                <outlet property="progressField" destination="3Z3-7K-860" id="LJl-5l-f8F"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGC-Y8-3YF" customClass="MyBMKMapView" customModule="newDriver" customModuleProvider="target">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Z3-7K-860">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获取订单路线中。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWA-FC-EzZ">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.90588235289999997" green="0.23921568630000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="YWA-FC-EzZ" firstAttribute="centerX" secondItem="3Z3-7K-860" secondAttribute="centerX" id="ImB-HR-gjI"/>
+                        <constraint firstItem="YWA-FC-EzZ" firstAttribute="centerY" secondItem="3Z3-7K-860" secondAttribute="centerY" id="UHE-JC-xhg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="路线长度：0公里 统计中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOz-3Q-ymO">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="LYX-uk-sYX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90588235289999997" green="0.23921568630000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="zqX-8O-87O"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Z3-7K-860" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2U8-8g-Vtz"/>
+                <constraint firstItem="XOz-3Q-ymO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="90C-bf-mEz"/>
+                <constraint firstAttribute="trailing" secondItem="gGC-Y8-3YF" secondAttribute="trailing" id="FMt-U9-1QH"/>
+                <constraint firstItem="gGC-Y8-3YF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MrI-b8-PjI"/>
+                <constraint firstAttribute="trailing" secondItem="XOz-3Q-ymO" secondAttribute="trailing" id="SPR-ht-s8X"/>
+                <constraint firstAttribute="bottom" secondItem="gGC-Y8-3YF" secondAttribute="bottom" id="akM-Tf-QD3"/>
+                <constraint firstItem="gGC-Y8-3YF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="by5-Dr-gtR"/>
+                <constraint firstItem="YWA-FC-EzZ" firstAttribute="top" secondItem="zqX-8O-87O" secondAttribute="bottom" constant="25" id="c1S-Im-LsE"/>
+                <constraint firstItem="zqX-8O-87O" firstAttribute="centerX" secondItem="3Z3-7K-860" secondAttribute="centerX" id="iCE-bL-od3"/>
+                <constraint firstItem="3Z3-7K-860" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="khz-LT-9SA"/>
+                <constraint firstItem="3Z3-7K-860" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mqF-no-uW7"/>
+                <constraint firstItem="3Z3-7K-860" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="n0Q-86-0vI"/>
+                <constraint firstAttribute="bottom" secondItem="XOz-3Q-ymO" secondAttribute="bottom" id="vIu-zL-YWf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

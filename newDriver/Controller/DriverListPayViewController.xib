@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriverListPayViewController" customModule="newDriver" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="XIw-SN-qlM" id="lYN-D8-qr3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XIw-SN-qlM">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="s9s-rI-oTY"/>
+                        <outlet property="delegate" destination="-1" id="lv5-Rk-mAP"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="915-o1-pcT">
+                    <color key="backgroundColor" red="0.27013062170000002" green="0.65527860449999997" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="feS-r1-kVA"/>
+                    </constraints>
+                    <state key="normal" title="全选">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="allChooseOnclick" destination="-1" eventType="touchUpInside" id="r4s-pI-bGt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHL-5H-Qos">
+                    <color key="backgroundColor" red="0.27013062170000002" green="0.65527860449999997" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="交付">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="commitOnclick" destination="-1" eventType="touchUpInside" id="6BC-05-uKK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cHL-5H-Qos" firstAttribute="height" secondItem="915-o1-pcT" secondAttribute="height" id="2We-ha-qkS"/>
+                <constraint firstItem="915-o1-pcT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="41H-Js-7gk"/>
+                <constraint firstItem="XIw-SN-qlM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JdQ-9i-57t"/>
+                <constraint firstItem="cHL-5H-Qos" firstAttribute="leading" secondItem="915-o1-pcT" secondAttribute="trailing" constant="25" id="N7v-KV-dIZ"/>
+                <constraint firstItem="XIw-SN-qlM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YMT-E4-UZv"/>
+                <constraint firstAttribute="bottom" secondItem="915-o1-pcT" secondAttribute="bottom" constant="15" id="aqg-HO-8sf"/>
+                <constraint firstItem="cHL-5H-Qos" firstAttribute="width" secondItem="915-o1-pcT" secondAttribute="width" id="iOo-Eo-2OD"/>
+                <constraint firstAttribute="trailing" secondItem="cHL-5H-Qos" secondAttribute="trailing" constant="25" id="k4b-DB-3sP"/>
+                <constraint firstItem="cHL-5H-Qos" firstAttribute="top" secondItem="XIw-SN-qlM" secondAttribute="bottom" constant="20" id="qBs-UL-ZwH"/>
+                <constraint firstItem="cHL-5H-Qos" firstAttribute="centerY" secondItem="915-o1-pcT" secondAttribute="centerY" id="qcU-dN-4Wx"/>
+                <constraint firstAttribute="trailing" secondItem="XIw-SN-qlM" secondAttribute="trailing" id="yxS-HN-HfU"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

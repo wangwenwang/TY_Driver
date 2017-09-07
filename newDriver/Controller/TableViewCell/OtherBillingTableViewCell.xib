@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="OtherBillingTableViewCell" customModule="newDriver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd6-9g-sCQ">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tn-qA-1aG">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Feo-jl-gXN">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="费用类型:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A01-j4-prh">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2j-EN-bNf">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他费:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tB-le-5CM">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Jq-5B-SaE">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="费用说明:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvz-qR-fFw">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O73-2J-WoA">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A01-j4-prh" firstAttribute="top" secondItem="Feo-jl-gXN" secondAttribute="bottom" id="07w-iP-Xdt"/>
+                            <constraint firstItem="5Jq-5B-SaE" firstAttribute="centerY" secondItem="3tB-le-5CM" secondAttribute="centerY" id="5LI-9h-B8A"/>
+                            <constraint firstItem="A01-j4-prh" firstAttribute="leading" secondItem="9tn-qA-1aG" secondAttribute="leading" id="6OJ-2Y-dNU"/>
+                            <constraint firstItem="Mvz-qR-fFw" firstAttribute="top" secondItem="5Jq-5B-SaE" secondAttribute="bottom" id="9oI-dA-8MZ"/>
+                            <constraint firstItem="Feo-jl-gXN" firstAttribute="centerY" secondItem="9tn-qA-1aG" secondAttribute="centerY" id="Aep-lA-eXN"/>
+                            <constraint firstItem="9tn-qA-1aG" firstAttribute="leading" secondItem="vd6-9g-sCQ" secondAttribute="leading" constant="8" id="CFe-aN-5wo"/>
+                            <constraint firstItem="O73-2J-WoA" firstAttribute="centerY" secondItem="Mvz-qR-fFw" secondAttribute="centerY" id="I6U-Fh-s0k"/>
+                            <constraint firstItem="H2j-EN-bNf" firstAttribute="leading" secondItem="A01-j4-prh" secondAttribute="trailing" id="Sof-co-J1z"/>
+                            <constraint firstItem="9tn-qA-1aG" firstAttribute="top" secondItem="vd6-9g-sCQ" secondAttribute="top" constant="4" id="UDe-Wr-u9C"/>
+                            <constraint firstItem="O73-2J-WoA" firstAttribute="leading" secondItem="Mvz-qR-fFw" secondAttribute="trailing" id="V6c-0L-ti6"/>
+                            <constraint firstItem="Mvz-qR-fFw" firstAttribute="leading" secondItem="9tn-qA-1aG" secondAttribute="leading" id="WCr-d7-csu"/>
+                            <constraint firstItem="3tB-le-5CM" firstAttribute="leading" secondItem="9tn-qA-1aG" secondAttribute="leading" id="fOk-c9-kDY"/>
+                            <constraint firstItem="3tB-le-5CM" firstAttribute="top" secondItem="A01-j4-prh" secondAttribute="bottom" id="gL1-gS-UuL"/>
+                            <constraint firstItem="Feo-jl-gXN" firstAttribute="leading" secondItem="9tn-qA-1aG" secondAttribute="trailing" id="gN9-cu-GIS"/>
+                            <constraint firstItem="5Jq-5B-SaE" firstAttribute="leading" secondItem="3tB-le-5CM" secondAttribute="trailing" id="m9d-LD-LZ2"/>
+                            <constraint firstItem="H2j-EN-bNf" firstAttribute="centerY" secondItem="A01-j4-prh" secondAttribute="centerY" id="sBP-k7-iyx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vd6-9g-sCQ" secondAttribute="trailing" id="3PF-Zl-Fks"/>
+                    <constraint firstItem="vd6-9g-sCQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="csZ-fh-Zen"/>
+                    <constraint firstItem="vd6-9g-sCQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dz7-zb-By4"/>
+                    <constraint firstAttribute="bottom" secondItem="vd6-9g-sCQ" secondAttribute="bottom" constant="1" id="qcL-M7-6FA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="FEE_DESC" destination="O73-2J-WoA" id="3L3-1D-FXu"/>
+                <outlet property="FEE_TYPE" destination="H2j-EN-bNf" id="ztk-w0-L74"/>
+                <outlet property="ORD_NO" destination="Feo-jl-gXN" id="6Lf-xb-vK7"/>
+                <outlet property="OTHER_FEES" destination="5Jq-5B-SaE" id="JkU-Sz-SFq"/>
+            </connections>
+            <point key="canvasLocation" x="44" y="101.5"/>
+        </tableViewCell>
+    </objects>
+</document>

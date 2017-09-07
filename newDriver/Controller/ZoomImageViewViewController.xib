@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZoomImageViewViewController" customModule="newDriver" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollViewField" destination="iPw-UO-vJ8" id="LVc-Uk-zG9"/>
+                <outlet property="spinnerField" destination="qyB-dV-xwl" id="AO1-Xy-4SD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPw-UO-vJ8">
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1h-jk-bgS">
+                    <color key="backgroundColor" red="0.27013062170000002" green="0.65527860449999997" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="RbS-iv-8gR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="返 回">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="goBack:" destination="-1" eventType="touchUpInside" id="ON1-Ks-JM4"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="qyB-dV-xwl"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iPw-UO-vJ8" secondAttribute="trailing" id="5Cx-WG-HUV"/>
+                <constraint firstItem="iPw-UO-vJ8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Ji-Be-VYi"/>
+                <constraint firstItem="P1h-jk-bgS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AJO-5P-pmE"/>
+                <constraint firstAttribute="bottom" secondItem="P1h-jk-bgS" secondAttribute="bottom" constant="10" id="IvX-FU-NoU"/>
+                <constraint firstItem="qyB-dV-xwl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VfW-fc-5kq"/>
+                <constraint firstItem="qyB-dV-xwl" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cp4-xY-qxF"/>
+                <constraint firstItem="iPw-UO-vJ8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="emg-z6-DoL"/>
+                <constraint firstAttribute="bottom" secondItem="iPw-UO-vJ8" secondAttribute="bottom" id="gfm-8S-BB5"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
